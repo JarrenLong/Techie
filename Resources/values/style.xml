@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="TechieTheme.Base">
+  </style>
+
+  <style name="TechieTheme" parent="TechieTheme.Base">
+  </style>
+
+  <style name="TechieTheme.Splash">
+    <item name="android:windowBackground">@drawable/SplashScreen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+</resources>
