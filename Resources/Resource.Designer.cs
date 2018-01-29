@@ -94,11 +94,23 @@ namespace LongTech.Techie
 			// aapt resource value: 0x7f080002
 			public const int frameLayoutTechie = 2131230722;
 			
+			// aapt resource value: 0x7f080003
+			public const int gridLayout1 = 2131230723;
+			
+			// aapt resource value: 0x7f080004
+			public const int imageButtonWorkItemJobStatus = 2131230724;
+			
 			// aapt resource value: 0x7f080000
 			public const int listViewAvailableWork = 2131230720;
 			
 			// aapt resource value: 0x7f080001
 			public const int listViewMyWork = 2131230721;
+			
+			// aapt resource value: 0x7f080006
+			public const int textViewWorkItemClientName = 2131230726;
+			
+			// aapt resource value: 0x7f080005
+			public const int textViewWorkItemJobDescription = 2131230725;
 			
 			static Id()
 			{
@@ -124,6 +136,9 @@ namespace LongTech.Techie
 			
 			// aapt resource value: 0x7f040003
 			public const int TechieActivity = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int work_item_listview_adapter = 2130968580;
 			
 			static Layout()
 			{

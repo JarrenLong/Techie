@@ -63,12 +63,17 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashActivity.cs" />
+    <Compile Include="WorkItem.cs" />
+    <Compile Include="WorkItemListViewAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\layout\mywork_fragment.axml" />
     <AndroidResource Include="Resources\layout\availablework_fragment.axml" />
     <AndroidResource Include="Resources\layout\myprofile_fragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\work_item_listview_adapter.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
