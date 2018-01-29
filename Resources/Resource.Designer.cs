@@ -94,11 +94,11 @@ namespace LongTech.Techie
 			// aapt resource value: 0x7f080002
 			public const int frameLayoutTechie = 2131230722;
 			
-			// aapt resource value: 0x7f080001
-			public const int imageView1 = 2131230721;
-			
 			// aapt resource value: 0x7f080000
-			public const int textView1 = 2131230720;
+			public const int listViewAvailableWork = 2131230720;
+			
+			// aapt resource value: 0x7f080001
+			public const int listViewMyWork = 2131230721;
 			
 			static Id()
 			{
@@ -114,10 +114,16 @@ namespace LongTech.Techie
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int simple_fragment = 2130968576;
+			public const int availablework_fragment = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int TechieActivity = 2130968577;
+			public const int myprofile_fragment = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int mywork_fragment = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int TechieActivity = 2130968579;
 			
 			static Layout()
 			{
@@ -148,20 +154,17 @@ namespace LongTech.Techie
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int app_name = 2131099649;
-			
 			// aapt resource value: 0x7f060000
-			public const int hello = 2131099648;
-			
-			// aapt resource value: 0x7f060004
-			public const int sessions_tab_label = 2131099652;
+			public const int app_name = 2131099648;
 			
 			// aapt resource value: 0x7f060003
-			public const int speakers_tab_label = 2131099651;
+			public const int tab_label_availablework = 2131099651;
+			
+			// aapt resource value: 0x7f060001
+			public const int tab_label_myprofile = 2131099649;
 			
 			// aapt resource value: 0x7f060002
-			public const int whatson_tab_label = 2131099650;
+			public const int tab_label_mywork = 2131099650;
 			
 			static String()
 			{

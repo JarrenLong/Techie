@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="hello">Hello World, Click Me!</string>
   <string name="app_name">Techie</string>
-  <string name="whatson_tab_label">What\'s On</string>
-  <string name="speakers_tab_label">Speakers</string>
-  <string name="sessions_tab_label">Sessions</string>
+  <string name="tab_label_myprofile">My Profile</string>
+  <string name="tab_label_mywork">My Work</string>
+  <string name="tab_label_availablework">Available Work</string>
 </resources>

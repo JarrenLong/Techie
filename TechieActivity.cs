@@ -9,8 +9,6 @@ namespace LongTech.Techie
   [Activity(Theme = "@style/TechieTheme", Label = "Techie", Icon = "@mipmap/icon")]
   public class TechieActivity : Activity
   {
-    static readonly string Tag = "ActionBarTabsSupport";
-
     Fragment[] _fragments;
 
     protected override void OnCreate(Bundle savedInstanceState)
@@ -22,14 +20,14 @@ namespace LongTech.Techie
 
       _fragments = new Fragment[]
       {
-        new WhatsOnFragment(),
-        new SpeakersFragment(),
-        new SessionsFragment()
+        new AvailableWorkFragment(),
+        new MyProfileFragment(),
+        new MyWorkFragment()
       };
 
-      AddTabToActionBar(Resource.String.whatson_tab_label, Resource.Drawable.ic_action_whats_on);
-      AddTabToActionBar(Resource.String.speakers_tab_label, Resource.Drawable.ic_action_speakers);
-      AddTabToActionBar(Resource.String.sessions_tab_label, Resource.Drawable.ic_action_sessions);
+      AddTabToActionBar(Resource.String.tab_label_myprofile, Resource.Drawable.ic_action_whats_on);
+      AddTabToActionBar(Resource.String.tab_label_mywork, Resource.Drawable.ic_action_speakers);
+      AddTabToActionBar(Resource.String.tab_label_availablework, Resource.Drawable.ic_action_sessions);
     }
 
     private void AddTabToActionBar(int labelResourceId, int iconResourceId)
@@ -47,35 +45,36 @@ namespace LongTech.Techie
     }
   }
 
-  public class SpeakersFragment : Fragment
+  public class MyProfileFragment : Fragment
   {
     public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-      View view = inflater.Inflate(Resource.Layout.simple_fragment, null);
-      view.FindViewById<TextView>(Resource.Id.textView1).SetText(Resource.String.speakers_tab_label);
-      view.FindViewById<ImageView>(Resource.Id.imageView1).SetImageResource(Resource.Drawable.ic_action_speakers);
+      View view = inflater.Inflate(Resource.Layout.myprofile_fragment, null);
+
       return view;
     }
   }
 
-  public class SessionsFragment : Fragment
+  public class MyWorkFragment : Fragment
   {
     public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-      View view = inflater.Inflate(Resource.Layout.simple_fragment, null);
-      view.FindViewById<TextView>(Resource.Id.textView1).SetText(Resource.String.sessions_tab_label);
-      view.FindViewById<ImageView>(Resource.Id.imageView1).SetImageResource(Resource.Drawable.ic_action_sessions);
+      View view = inflater.Inflate(Resource.Layout.mywork_fragment, null);
+      var list = view.FindViewById<ListView>(Resource.Id.listViewMyWork);
+
+      // TODO: Fill in the list of available work
       return view;
     }
   }
 
-  public class WhatsOnFragment : Fragment
+  public class AvailableWorkFragment : Fragment
   {
     public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-      View view = inflater.Inflate(Resource.Layout.simple_fragment, null);
-      view.FindViewById<TextView>(Resource.Id.textView1).SetText(Resource.String.whatson_tab_label);
-      view.FindViewById<ImageView>(Resource.Id.imageView1).SetImageResource(Resource.Drawable.ic_action_whats_on);
+      View view = inflater.Inflate(Resource.Layout.availablework_fragment, null);
+      var list = view.FindViewById<ListView>(Resource.Id.listViewAvailableWork);
+
+      // TODO: Fill in the list of available work
       return view;
     }
   }
