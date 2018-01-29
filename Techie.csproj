@@ -59,6 +59,9 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AvailableWorkFragment.cs" />
+    <Compile Include="MyProfileFragment.cs" />
+    <Compile Include="MyWorkFragment.cs" />
     <Compile Include="TechieActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
